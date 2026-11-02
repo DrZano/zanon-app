@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zanon App</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background: #101820;
+      color: #f1f7f8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .card {
+      width: 100%;
+      max-width: 420px;
+      padding: 30px 24px;
+      border-radius: 24px;
+      background: #192833;
+      border: 1px solid #2d4653;
+      text-align: center;
+      box-shadow: 0 20px 50px #0005;
+    }
+    .logo {
+      width: 70px;
+      height: 70px;
+      margin: auto;
+      border-radius: 22px;
+      display: grid;
+      place-items: center;
+      background: #36d6c3;
+      color: #10201f;
+      font-size: 32px;
+      font-weight: bold;
+    }
+    h1 { margin: 20px 0 10px; }
+    p { color: #a9bdc7; line-height: 1.8; }
+    button {
+      border: 0;
+      border-radius: 12px;
+      background: #36d6c3;
+      color: #10201f;
+      padding: 13px 22px;
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="logo">Z</div>
+    <h1>أهلاً بك في Zanon</h1>
+    <p id="message">
+      هذا أول تطبيق HTML خاص بك. نبدأ من هنا ونطوّره خطوة بخطوة.
+    </p>
+    <button onclick="changeMessage()">جرّب التطبيق</button>
+  </main>
+
+  <script>
+    function changeMessage() {
+      document.getElementById("message").textContent =
+        "ممتاز! التطبيق يعمل بنجاح.";
+    }
+  </script>
+</body>
+</html>
